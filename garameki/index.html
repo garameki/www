@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+
+<style type="text/css">
+:root {
+	--dateColor:white;
+}
+/*全体*/
+body {
+	font-family:"MigMix 1M",Meiryo,sans-serif,arial;
+	background-color:black;
+	margin-left:0px;
+	margin-top:0px;
+	text-align:center;
+}
+#page {
+	display:inline-block;
+	text-align:start;
+}
+
+#head {
+}
+#counter {
+	margin:0px;
+	width:100%;
+	height:50px;
+}
+#middle {
+
+}
+#leftColumn {
+	width:600px;
+	float:left;
+}
+
+#rightColumn {
+	width:100px;
+	float:left;
+}
+.clear {
+	clear:left;
+}
+#adminForm {
+
+}
+#footer {
+	clear:left;
+	text-align:right;
+}
+
+/*headの中身*/
+h1 {
+	width:800px;
+	height:220px;
+	background: no-repeat url('./images/maintitle.jpg');
+	background-size: 100%;
+	text-align: right; 
+	color: #ffffff;
+	margin:0px;
+}
+#headTitle {
+	position:relative;
+	top:120px;
+	font-size:50px;
+	color: #00e0f0;
+	margin-right:10px;
+}
+#headSubtitle {
+	position:relative;
+	top:120px;
+	color: yellow;
+	font-size:15px;
+	margin-right: 10px;
+}
+	
+/*middle > leftColumn*/
+.content {
+	margin-bottom:30px;
+}
+.contentHead {
+
+}
+h2 {
+	
+	float:left;
+	width:130px;
+	height:100px;
+	border: solid 2px black;
+	background: repeat-y url('./images/maintitle.jpg');
+	background-size: 100%;
+	text-align: center; 
+	color: #ffffff;
+	margin:0px;
+}
+.contentDate {
+	position:relative;
+	font-size:30px;
+	color:var(--dateColor);
+	margin:0px;
+}
+.contentDayofweek {
+	position:relative;
+	top:-5px;
+	font-size:20px;
+	color:var(--dateColor);
+	margin:0px;
+}
+.contentYear {
+	position:relative;
+	top:-10px;
+	font-size:30px;
+	color:var(--dateColor);
+	margin:0px;
+
+}
+.contentTitle {
+	margin-left:150px;
+	width:500px;
+	border-bottom: dashed 1px #d0d0d0; 
+	border-collapse:collapse;
+	letter-spacing:8px;
+	font-size:40px;
+	font-weight:bold;	
+	color:#00e099;
+}
+.contentEditDay {
+	margin-top:6px;
+	margin-left:160px;
+	width:400px;
+	border-collapse:collapse;
+	font-size:11px;
+	color:var(--dateColor);
+}
+.contentCategory {
+	margin-left:160px;
+	width:400px;
+	border-collapse:collapse;
+	font-size:11px;
+	color:var(--dateColor);
+}
+.contentArticle {
+	color:white;
+	font-size:30px;
+}
+#adminFormTable {
+	color:white;
+}
+
+  </style>
+  <title>がらめき</title>
+ </head>
+ <body>
+<div id="page">
+	<div id="head">
+		<h1>
+			 <div id="headTitle">がらめきドットコム</div>
+			 <div id="headSubtitle">やったことメモ</div>
+		</h1>
+	</div>
+	<iframe id="counter" frameborder="0" src="./cgi/counter.py"></iframe>
+	<div id="middle">
+		<div id="leftColumn">
+			<div class="content">
+				<div class="contentHead">
+					<h2>
+						<div class="contentDate">10/04</div>
+						<div class="contentDayofweek">Tue</div>
+						<div class="contentYear">2018</div>
+					</h2>
+					<div class="contentTitle">管理者用入力フォーム</div>
+					<div class="contentEditDay">2018-10-04</div>
+					<div class="contentCategory">web</div>
+				</div>
+				<div class="clear"></div>
+				<div class="contentArticle">
+					CGIにはpythonを使用します。
+					タグをコピペして使うのが辛くなってきたので、投稿用の入力フォームを作ることにしました。<br>
+					使用言語はpythonです。<br>	
+
+
+				</div>
+			</div>
+			<div class="content">
+				<div class="contentHead">
+					<h2>
+						<div class="contentDate">10/03</div>
+						<div class="contentDayofweek">Wed</div>
+						<div class="contentYear">2018</div>
+					</h2>
+					<div class="contentTitle">日付をかっこよくする</div>
+					<div class="contentEditDay">2018-10-03</div>
+					<div class="contentCategory">web</div>
+				</div>
+				<div class="clear"></div>
+				<div class="contentArticle"></div>
+			</div>
+			<div class="content">
+				<div class="contentHead">
+					<h2>
+						<div class="contentDate">10/02</div>
+						<div class="contentDayofweek">Tue</div>
+						<div class="contentYear">2018</div>
+					</h2>
+					<div class="contentTitle">タイトル画像を掲載</div>
+					<div class="contentEditDay">2018-10-02</div>
+					<div class="contentCategory">web</div>
+				</div>
+				<div class="clear"></div>
+				<div class="contentArticle"></div>
+			</div>
+			<div class="content">
+				<div class="contentHead">
+					<h2>
+						<div class="contentDate">10/01</div>
+						<div class="contentDayofweek">Mon</div>
+						<div class="contentYear">2018</div>
+					</h2>
+					<div class="contentTitle">カウンターを作成</div>
+					<div class="contentEditDay">2018-10-01</div>
+					<div class="contentCategory">web</div>
+				</div>
+				<div class="clear"></div>
+				<div class="contentArticle"></div>
+			</div>
+		</div>
+		<div id="rightColumn">
+			<div id="advertise">
+				<div class="titleRight">AD</div>
+				<div class="contentRight"></div>		
+			</div>
+			<div id="category">
+				<div class="titleRight">カテゴリー</div>
+				<div class="contentRight"></div>		
+			</div>
+			<div id="latest">
+				<div class="titleRight">最新記事</div>
+				<div class="contentRight"></div>		
+			</div>
+			<div id="link">
+				<div class="titleRight">リンク</div>
+				<div class="contentRight"></div>		
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<hr>
+	<form id="adminForm" actiction="cgi-bin/formmail.cgi" method="post" enctype="multipart/form-data">
+		<table id="adminFormTable">
+		<tr><td>Title</td><td><input type="text" name="title" size="40"></td></tr>
+		<tr><td>Date </td><td><input type="text" name="date" value="20181003"></td></tr>
+		<tr><td>Category</td><td><select name="category">
+				<option value="web">web</option>
+				<option value="rp">raspberryPi</option>
+				<option value="diy">DIY</option>
+				<option value="else">その他</option>
+			</select></td></tr>
+		<tr><td>Image</td><td><input name="image" type="file" rows="4" cols="40"></textarea></td></tr>
+		<tr><td>Content</td><td><textarea name="content" rows="4" cols="40"></textarea></td></tr>
+
+		<tr><td></td><td><input type="submit" value="送信"></td><td><input type="reset" value="リセット"></td></tr>
+		</table>
+	</form>
+
+	<div id="footer"><hr>Powered by RaspberryPi</div>
+</div>
+</html>
+
